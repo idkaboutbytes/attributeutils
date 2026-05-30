@@ -1,0 +1,28 @@
+name = "idkaboutbytes/attributeutils"
+version = "1.1.4"
+description = "AttributeUtils package for Roblox."
+license = "MIT"
+authors = ["idkaboutbytes"]
+repository = "https://github.com/idkaboutbytes/attributeutils"
+includes = [
+    "pesde.toml",
+    "README.md",
+    "CHANGELOG.md",
+    "default.project.json",
+    "src/**/*.luau",
+]
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[dependencies]
+Observable = { repo = "idkaboutbytes/observable", rev = "v1.0.3" }
+Brio = { repo = "idkaboutbytes/brio", rev = "v1.2.3" }
+Loader = { repo = "idkaboutbytes/loader", rev = "v1.2.5" }
+Promise = { repo = "idkaboutbytes/promise", rev = "v2.1.5" }
+CancelToken = { repo = "idkaboutbytes/canceltoken", rev = "v1.0.6" }
+Maid = { repo = "idkaboutbytes/maid", rev = "v1.1.6" }
+Rx = { repo = "idkaboutbytes/rx", rev = "v1.0.7" }
+Symbol = { repo = "idkaboutbytes/symbol", rev = "v1.0.4" }
